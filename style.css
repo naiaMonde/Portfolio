@@ -1,0 +1,62 @@
+:root {
+  --primary: #FF6B35;       /* Orange principal */
+  --primary-light: #FFA552; /* Orange clair */
+  --dark: #2D2D2D;          /* Texte sombre */
+  --light: #F4F4F4;         /* Fond clair */
+  --white: #FFFFFF;         /* Fond principal */
+  --accent: #1D3557;        /* Bleu pétrole */
+}
+
+body {
+  background-color: var(--accent);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0; /* Supprime les marges par défaut */
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-light); /* Orange clair */
+}
+
+p, li {
+  font-family: 'Roboto Slab', serif;
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: var(--dark);
+}
+
+.header_Titre{
+    display: inline-block; /* le lien s’adapte seulement au texte */
+    justify-self: start; /* évite de remplir toute la colonne */
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    color: var(--white);
+}
+
+#header_nom{
+    margin-left: 5px;
+}
+
+#main_div_titre_index{
+    margin-top: 10%;
+    margin-left: 10%;
+    line-height: 1.2;         /* espace entre les lignes */
+}
+
+.text_main_div_titre_index{
+    font-weight: normal; /* enlève le gras seulement ici */
+    font-family: 'Roboto Slab', serif;
+    margin: 0;   /* supprime toutes les marges */
+    padding: 0;  /* supprime tout padding */
+}
+
+h3.text_main_div_titre_index {
+    font-size: 70px ;
+}
