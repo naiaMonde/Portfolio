@@ -5,6 +5,7 @@
   --light: #F4F4F4;         /* Fond clair */
   --white: #FFFFFF;         /* Fond principal */
   --accent: #1D3557;        /* Bleu pétrole */
+  --scale: 2; /* facteur d'agrandissement */ 
 }
 
 body {
@@ -12,6 +13,17 @@ body {
   color: var(--white);
   font-family: 'Montserrat', sans-serif;
   margin: 0; /* Supprime les marges par défaut */
+}
+
+.rond{
+    border-radius: 50%;
+}
+
+#header_rond_index{
+  background-color: var(--primary);
+  padding: 20%;
+  justify-self: center;
+  margin-left: 40% ;
 }
 
 h1, h2, h3 {
@@ -26,22 +38,30 @@ p, li {
 
 header{
     display: grid;
-    grid-template-columns: 80% 10% 10%;
+    grid-template-columns: 2% 80% 8% 8%;
     width: 100%;
     height: 50px;
     align-items: center;
     background-color: var(--dark);
 }
 
+
 .header_Titre{
     display: inline-block; /* le lien s’adapte seulement au texte */
     justify-self: start; /* évite de remplir toute la colonne */
     text-decoration: none; /* Enlève le soulignement par défaut */
     color: var(--white);
+    text-align: center;
 }
 
 #header_nom{
     margin-left: 5px;
+}
+
+#main_div_conteneur_titre_graphique_index{
+  display: grid ;
+  grid-template-columns: 50% 50%;
+  align-items: center;
 }
 
 #main_div_titre_index{
@@ -52,11 +72,63 @@ header{
 
 .text_main_div_titre_index{
     font-weight: normal; /* enlève le gras seulement ici */
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat Slab', serif;
     margin: 0;   /* supprime toutes les marges */
     padding: 0;  /* supprime tout padding */
 }
 
+span.text_main_div_titre_index{
+  font-size: 250%;
+}
+
 h3.text_main_div_titre_index {
-    font-size: 70px ;
+    font-size: 400% ;
+    font-family: 'Roboto Slab', serif;
+}
+
+h5.text_main_div_titre_index{
+  font-size: 150%;
+  color: var(--primary);
+}
+
+#main_div_rond_1_index,
+#main_div_rond_2_index,
+#main_div_rond_3_index {
+  display: inline-block;
+  width: 100px;   /* taille fixe au lieu de padding % */
+  height: 100px;
+}
+
+#main_div_rond_1_index { 
+  background-color: var(--primary);
+  margin-top: 50px; /* espace avec le header */
+}
+#main_div_rond_2_index { 
+  background-color: var(--primary-light);
+  margin-left: -30px;
+  margin-top: 70px;
+}
+#main_div_rond_3_index { 
+  background-color: var(--light);
+  margin-left: -30px;
+  margin-top: 90px;
+}
+
+
+.div_download_button_index{
+  background-color: var(--primary);
+  justify-self: start; /* évite de remplir toute la colonne */
+  padding: 10px;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 10px;
+
+}
+
+.div_download_button_index > a{
+  text-decoration: none; /* Enlève le soulignement par défaut */
+  color: var(--dark);
+  font-weight: bold;
+  justify-content: center;
+
 }
