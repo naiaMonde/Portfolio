@@ -15,6 +15,10 @@ body {
   margin: 0; /* Supprime les marges par défaut */
 }
 
+main{
+  margin: 5% 5%;
+}
+
 .rond{
     border-radius: 50%;
 }
@@ -45,17 +49,34 @@ header{
     background-color: var(--dark);
 }
 
-
 .header_Titre{
     display: inline-block; /* le lien s’adapte seulement au texte */
     justify-self: start; /* évite de remplir toute la colonne */
     text-decoration: none; /* Enlève le soulignement par défaut */
     color: var(--white);
-    text-align: center;
+}
+
+header a[href="index.html"],
+header a[href="travaux.html"] {
+  justify-self: end;  /* colle à droite */
+  text-align: right;  /* si le texte doit être aligné */
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #header_nom{
     margin-left: 5px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
 }
 
 #main_div_conteneur_titre_graphique_index{
@@ -65,7 +86,6 @@ header{
 }
 
 #main_div_titre_index{
-    margin-top: 10%;
     margin-left: 10%;
     line-height: 1.2;         /* espace entre les lignes */
 }
@@ -114,15 +134,17 @@ h5.text_main_div_titre_index{
   margin-top: 90px;
 }
 
+.div_liens_personels_index{
+  display: flex;
+}
 
 .div_download_button_index{
   background-color: var(--primary);
   justify-self: start; /* évite de remplir toute la colonne */
   padding: 10px;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 5%;
   border-radius: 10px;
-
 }
 
 .div_download_button_index > a{
@@ -130,5 +152,57 @@ h5.text_main_div_titre_index{
   color: var(--dark);
   font-weight: bold;
   justify-content: center;
+}
+
+.bouton_linkedin{
+    display: inline-flex;
+    align-items: center;
+    background-color: #0077B5;
+    color: white;
+    padding: 8px 8px ;
+    margin-top: 5%;
+    margin-left: 2%;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.siv_about_me_index{
+  margin-top: 5%;
+}
+
+.siv_about_me_index > h3{
+  margin: 0;   /* supprime toutes les marges */
+  margin-top: 5%;
+  font-size: 300% ;
+  
+}
+
+.siv_about_me_index > p{
+
+}
+
+/* Tout écran de moins de 768px */
+@media (max-width: 768px) {
+
+  #main_div_rond_1_index,
+  #main_div_rond_2_index,
+  #main_div_rond_3_index {
+    display: none;
+  }
+
+    .header_Titre {
+        display: none; 
+    }
+
+    #header_rond_index{
+      display: none;
+    }
+    
+    .hamburger {
+        display: block; /* afficher le bouton */
+        margin-left: 5px;
+    }
 
 }
