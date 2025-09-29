@@ -1,71 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Lien vers le fichier css -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Ajout des polices Montserrat (titres) et Roboto Slab (paragraphes) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Slab:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <title>Mondétéguy Naïa Portfolio</title>
 </head>
+
 <body>
     <header>
         <span class="rond" id="header_rond_index"></span>
-        <a href="description.html" class="header_Titre" id="header_nom">Mondétéguy Naïa</a>
+        <p class="header_Titre" id="header_nom">Mondétéguy Naïa</p>
 
         <!-- Liens du menu -->
-            <a href="index.html" class="header_Titre">Home</a>
-                   <!-- Bouton hamburger -->
-                <a href="travaux.html" class="header_Titre">Work</a>
-                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            
+        <a href="index.html" class="header_Titre">Home</a>
+        <!-- Bouton hamburger -->
+        <a href="travaux.html" class="header_Titre">Work</a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
     </header>
 
     <main>
         <div id="main_div_conteneur_titre_graphique_index">
             <div id="main_div_titre_index">
                 <span class="text_main_div_titre_index">Hello, I am</span>
-                <h3 class="text_main_div_titre_index" >Mondétéguy Naïa </h3>
+                <h3 class="text_main_div_titre_index">Mondétéguy Naïa </h3>
                 <h5 class="text_main_div_titre_index">computer science student</h5>
                 <h5 class="text_main_div_titre_index">In France, Bayonne</h5>
-            </div> 
+            </div>
             <div>
-                <span class = "rond" id="main_div_rond_1_index"></span>
-                <span class = "rond" id="main_div_rond_2_index"></span>
-                <span class = "rond" id="main_div_rond_3_index"></span>
+                <span class="rond" id="main_div_rond_1_index"></span>
+                <span class="rond" id="main_div_rond_2_index"></span>
+                <span class="rond" id="main_div_rond_3_index"></span>
             </div>
         </div>
         <div class="div_liens_personels_index">
-            <div class="div_download_button_index">  
-                <a href="image/Cv_anglais .pdf" download="Cv_aMondtéguy_Naïa.pdf">Download my CV</a>
+            <div class="div_download_button_index">
+                <a href="image/Cv_anglais .pdf" target="_blank" download="Cv_aMondtéguy_Naïa.pdf">Download my CV</a>
             </div>
-            <a class="bouton_linkedin" href="https://www.linkedin.com/in/naïa-mondétéguy-34395632b">
+            <a class="bouton_linkedin" target="_blank" href="https://www.linkedin.com/in/naïa-mondétéguy-34395632b">
                 <!-- Logo LinkedIn -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
-                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.78v2.16h.07c.66-1.25 2.28-2.57 4.7-2.57 5.02 0 5.95 3.3 5.95 7.58V24h-5v-7.92c0-1.89-.03-4.32-2.63-4.32-2.64 0-3.04 2.06-3.04 4.18V24h-5V8z"/>
+                    <path
+                        d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.78v2.16h.07c.66-1.25 2.28-2.57 4.7-2.57 5.02 0 5.95 3.3 5.95 7.58V24h-5v-7.92c0-1.89-.03-4.32-2.63-4.32-2.64 0-3.04 2.06-3.04 4.18V24h-5V8z" />
                 </svg>
             </a>
         </div>
-        <div class ="siv_about_me_index">
+        <div class="div_about_me_index">
             <h3>Hello,</h3>
-            <p>
-                "I am " 
-                <strong>Naïa Mondétéguy</strong>
-                ", Student in ... "
+            <p class = "p_about_me_text_index">
+                I am 
+                <b>Naïa Mondétéguy</b>
+                , currently in my second year of Computer science  to get my diploma of higher education. Passionate about IT, I enjoy both the technical aspects and the thinking behind each project.
             </p>
 
+            <h3>Skills</h3>
+            <ul class="ul_style_list_index">
+                <li>
+                    <h5 class = "h5_titre_skill_index">Conception et Programmation</h5>
+                    <p class = "p_para_skill_index">Integration of technical solutions into an educational framework</p>
+                </li>
+                <li>
+                    <h5 class = "h5_titre_skill_index">Data Management</h5>
+                    <p class = "p_para_skill_index">Modeling, design, manipulation and structuring of relational databases.</p>
+                </li>
+                <li>
+                    <h5 class = "h5_titre_skill_index">Project Management</h5>
+                    <p class = "p_para_skill_index">Planning and organization of a project in a collaborative framework.</p>
+                </li>
+                <li>
+                    <h5 class = "h5_titre_skill_index">Network installation</h5>
+                    <p class = "p_para_skill_index">Configure a network to connect to other networks securely.</p>
+                </li>
+                <li>
+                    <h5 class = "h5_titre_skill_index">Data exploitation and processing</h5>
+                    <p class = "p_para_skill_index">Extraction, processing and interpretation of data, creation of graphs and dashboards to illustrate the results.</p>
+                </li>
+            </ul>
+
+            <h3>Programing Languages</h3>
+            <div class="div_prog_language_index">
+                <h5>PHP</h5>
+                <span>80%</span>
+                <div class="div_bar_prog_index">
+                    <div class="div_bar_progress_index"></div>
+                </div>
+
+
+            </div>
+
         </div>
-        
+
 
 
 
     </main>
 
 </body>
+
 </html>

@@ -35,9 +35,18 @@ h1, h2, h3 {
   color: var(--primary-light); /* Orange clair */
 }
 
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
+  font-size: 15px;
+}
+
 p, li {
   font-family: 'Roboto Slab', serif;
+}
 
+ul, li {
+  list-style-type: none;
 }
 
 header{
@@ -70,6 +79,7 @@ header div {
 
 #header_nom{
     margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hamburger {
@@ -179,9 +189,27 @@ h5.text_main_div_titre_index{
   
 }
 
-.siv_about_me_index > p{
-
+.h5_titre_skill_index{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
+  font-size: 15px;
+  margin: 0;
+  margin-left: -20px;
 }
+
+.p_para_skill_index {
+  text-indent: 10px;
+}
+
+.div_prog_language_index{
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+
+
 
 /* Tout écran de moins de 768px */
 @media (max-width: 768px) {
