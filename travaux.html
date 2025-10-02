@@ -21,10 +21,21 @@
 
         <!-- Liens du menu -->
         <a href="index.html" class="header_Titre">Home</a>
-        <!-- Bouton hamburger -->
         <a href="travaux.html" class="header_Titre">Work</a>
+
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
+        <!-- Menu mobile caché -->
+        <div id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="travaux.html">Work</a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("mobileMenu").classList.toggle("show");
+            }
+        </script>
     </header>
     <p>travaux en travaux LoL</p>
 </body>
