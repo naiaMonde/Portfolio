@@ -1,3 +1,8 @@
+/*----------------------------------------------------------------------------*/
+/*                           Css des elts commun                                  */
+/*----------------------------------------------------------------------------*/
+
+
 :root {
   --primary: #FF6B35;
   /* Orange principal */
@@ -22,10 +27,6 @@ body {
   /* Supprime les marges par défaut */
 }
 
-main {
-  
-}
-
 .rond {
   border-radius: 50%;
 }
@@ -43,6 +44,10 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   color: var(--primary-light);
   margin-top: 50px;
+}
+
+h3{
+  font-size: x-large;
 }
 
 h5 {
@@ -127,6 +132,11 @@ header div {
   display: flex;
 }
 
+/*----------------------------------------------------------------------------*/
+/*                            Css de l'index                                   */
+/*----------------------------------------------------------------------------*/
+
+
 #main_div_conteneur_titre_graphique_index {
   margin: 5% 5%;
   display: grid;
@@ -206,9 +216,6 @@ h5.text_main_div_titre_index {
     height: 100%;
         margin: auto;
 }
-.div_about_me_index > h3 {
-  font-size: x-large;
-}
 
 .div_liens_personels_index {
   margin : 5% 5%;
@@ -272,6 +279,42 @@ h5.text_main_div_titre_index {
   text-indent: 10px;
 }
 
+/*----------------------------------------------------------------------------*/
+/*                            Css de trabaux                                  */
+/*----------------------------------------------------------------------------*/
+
+#div_conteneur_titre_graphique_travaux{
+  margin: 5% 5%;
+  align-items: center;
+}
+
+.p_text_div_description_page_travaux{
+  font-size: 200%;
+  justify-self: center;
+}
+
+.div_projet_travaux{
+  margin: 5% 5%;
+}
+
+.div_projet_travaux > h3 {
+  text-align: center;
+}
+
+.div_projet_travaux > p {
+
+}
+
+.img_projet_contexte_travaux{
+  width: 90%;
+  justify-self: center;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*                            Css ddu footer                                  */
+/*----------------------------------------------------------------------------*/
+
 
 footer{
   text-align: center;
@@ -290,6 +333,10 @@ footer{
 
   .header_Titre {
     display: none;
+  }
+
+  #header_nom{
+    font-size: 200%;
   }
 
   #header_rond_index {
