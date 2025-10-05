@@ -46,19 +46,19 @@ h3 {
   margin-top: 50px;
 }
 
-h3{
-  font-size: x-large;
+h3 {
+  font-size: 300%;
 }
 
 h5 {
   font-family: 'Montserrat', sans-serif;
   color: var(--primary);
-  font-size: 15px;
+  font-size: 130%;
 }
 
-p,
-li {
+p{
   font-family: 'Roboto Slab', serif;
+  font-size: 120%;
 }
 
 ul,
@@ -132,9 +132,13 @@ header div {
   display: flex;
 }
 
+
+
 /*----------------------------------------------------------------------------*/
 /*                            Css de l'index                                   */
 /*----------------------------------------------------------------------------*/
+
+
 
 
 #main_div_conteneur_titre_graphique_index {
@@ -164,24 +168,20 @@ span.text_main_div_titre_index {
   font-size: 250%;
 }
 
-.div_conteneur_texte_cat_prog_index{
+.div_conteneur_texte_cat_prog_index {
   background-color: var(--dark);
-  padding: 10px ;
+  padding: 10px;
 }
 
 .div_conteneur_texte_cat_prog_index > h3 {
   text-align: center;
-  font-size: x-large;
-}
-h3.text_main_div_titre_index {
-  font-size: 400%;
-  max-width: 100%;      /* ne dépasse pas la div */
-  font-family: 'Roboto Slab', serif;
 }
 
-h5.text_main_div_titre_index {
-  font-size: 150%;
-  color: var(--primary);
+h3.text_main_div_titre_index {
+  font-size: 400%;
+  max-width: 100%;
+  /* ne dépasse pas la div */
+  font-family: 'Roboto Slab', serif;
 }
 
 #main_div_rond_1_index,
@@ -211,14 +211,8 @@ h5.text_main_div_titre_index {
   margin-top: 90px;
 }
 
-.div_about_me_index{
-    width: 70%;
-    height: 100%;
-        margin: auto;
-}
-
 .div_liens_personels_index {
-  margin : 5% 5%;
+  margin: 5% 5%;
   display: flex;
 }
 
@@ -254,11 +248,14 @@ h5.text_main_div_titre_index {
   font-weight: bold;
 }
 
-.siv_about_me_index {
+.div_about_me_index {
+  width: 70%;
+  height: 100%;
+  margin: auto;
   margin-top: 5%;
 }
 
-.siv_about_me_index>h3 {
+.div_about_me_index>h3 {
   margin: 0;
   /* supprime toutes les marges */
   margin-top: 5%;
@@ -266,10 +263,14 @@ h5.text_main_div_titre_index {
 
 }
 
+.div_grid_img_index{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .h5_titre_skill_index {
   font-family: 'Montserrat', sans-serif;
   color: var(--primary);
-  font-size: 15px;
   margin: 0;
   margin-left: -20px;
 }
@@ -280,34 +281,36 @@ h5.text_main_div_titre_index {
 }
 
 /*----------------------------------------------------------------------------*/
-/*                            Css de trabaux                                  */
+/*                            Css de travaux                                  */
 /*----------------------------------------------------------------------------*/
 
-#div_conteneur_titre_graphique_travaux{
+#div_conteneur_titre_graphique_travaux {
   margin: 5% 5%;
   align-items: center;
 }
 
-.p_text_div_description_page_travaux{
+.p_text_div_description_page_travaux {
   font-size: 200%;
   justify-self: center;
 }
 
-.div_projet_travaux{
+.div_projet_travaux {
   margin: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centre horizontalement tous les enfants */
 }
 
-.div_projet_travaux > h3 {
+.div_projet_travaux>h3 {
   text-align: center;
 }
 
-.div_projet_travaux > p {
 
-}
-
-.img_projet_contexte_travaux{
-  width: 90%;
-  justify-self: center;
+.img_projet_contexte_travaux {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
 }
 
 
@@ -316,7 +319,8 @@ h5.text_main_div_titre_index {
 /*----------------------------------------------------------------------------*/
 
 
-footer{
+footer {
+  margin-top: 20px;
   text-align: center;
   padding: 10px;
 }
@@ -335,7 +339,7 @@ footer{
     display: none;
   }
 
-  #header_nom{
+  #header_nom {
     font-size: 200%;
   }
 
@@ -361,6 +365,21 @@ footer{
   header a.header_Titre {
     display: none;
     /* cache les liens dans la grille */
+  }
+
+  h3.text_main_div_titre_index{
+    font-size: 100%;
+  }
+
+  .div_grid_img_index{
+    display: block;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .div_grid_img_index > img{
+    display: none;
   }
 
 }
