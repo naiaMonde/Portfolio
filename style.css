@@ -302,7 +302,7 @@ h3.text_main_div_titre_index {
   /* Centre horizontalement tous les enfants */
 }
 
-.div_projet_travaux>h3 {
+.div_projet_travaux > h3 {
   text-align: center;
 }
 
