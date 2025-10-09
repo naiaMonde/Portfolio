@@ -70,8 +70,9 @@ header {
   display: grid;
   grid-template-columns: 2% 80% 8% 8%;
   width: 100%;
-  height: 50px;
+  height: 40px;
   align-items: center;
+  padding-bottom: 20px;
   background-color: var(--dark);
 }
 
@@ -263,10 +264,27 @@ h3.text_main_div_titre_index {
 
 }
 
-.div_grid_img_index{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.p_about_me_text_index{
+  margin-bottom: 17%;
 }
+
+.div_img_index {
+  display: flex;
+  align-items: center;}
+
+.div_img_index > img {
+  height: 250px;
+  width: auto;
+}
+
+.div_img_index > p,
+.div_img_index > img {
+  display: inline-block;
+  vertical-align: middle; /* aligne verticalement le texte et l’image */
+}
+
+
+
 
 .h5_titre_skill_index {
   font-family: 'Montserrat', sans-serif;
