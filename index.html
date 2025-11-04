@@ -5,181 +5,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Lien vers le fichier css -->
+    <title>Portfolio – Mondétéguy Naïa</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ton style perso -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Ajout des polices Montserrat (titres) et Roboto Slab (paragraphes) -->
+    <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Slab:wght@400;500&display=swap"
         rel="stylesheet">
 
-    <title>Mondétéguy Naïa Portfolio</title>
+    <!-- Icône -->
+    <link rel="icon" href="image/logo.png" />
 </head>
 
 <body>
-    <header>
-        <span class="rond" id="header_rond_index"></span>
-        <p class="header_Titre" id="header_nom">Mondétéguy Naïa</p>
+    <!-- Navbar -->
+    <header class="segment fixed-top">
+        <nav class="navbar navbar-expand-lg bg-dark text-light">
+            <div class="container-fluid" style="font-family: 'Montserrat', sans-serif;">
+                <a class="navbar-brand text-light" href="#">
+                    <img src="image/logo_inverted.png" alt="Logo" width="40" height="30"
+                        class="d-inline-block align-text-top">
+                    Mondétéguy Naïa
+                </a>
 
-        <!-- Liens du menu -->
-        <a href="index.html" class="header_Titre">Home</a>
-        <a href="travaux.html" class="header_Titre">Work</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-
-        <!-- Menu mobile caché -->
-        <div id="mobileMenu">
-            <a href="index.html">Home</a>
-            <a href="travaux.html">Work</a>
-        </div>
-
-        <script>
-            function toggleMenu() {
-                document.getElementById("mobileMenu").classList.toggle("show");
-            }
-        </script>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#ancreCompetence">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ancreContact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
 
+    <section class="section-fullscreen segment bg-dark text-light d-flex flex-column justify-content-between"
+        style="max-height: 100vh; padding: 2rem 0;">
 
-    <main>
-        <div id="main_div_conteneur_titre_graphique_index">
-            <div id="main_div_titre_index">
-                <span class="text_main_div_titre_index">Hello, I am</span>
-                <h3 class="text_main_div_titre_index">Mondétéguy Naïa </h3>
-                <h5 class="text_main_div_titre_index">computer science student</h5>
-                <h5 class="text_main_div_titre_index">In France, Bayonne</h5>
-            </div>
-            <div>
-                <span class="rond" id="main_div_rond_1_index"></span>
-                <span class="rond" id="main_div_rond_2_index"></span>
-                <span class="rond" id="main_div_rond_3_index"></span>
+        <!-- Contenu centré verticalement -->
+        <div class="container flex-grow-1 d-flex align-items-center">
+            <div class="row w-100">
+
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="d-block display-6">Bonjour, je suis</span>
+                    <h3 class="display-1 text_main_div_titre_index">Mondétéguy Naïa</h3>
+                    <h5 class="display-6 mt-1">Étudiante en BUT Informatique</h5>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <span class="rond" id="main_div_rond_1_index"></span>
+                    <span class="rond" id="main_div_rond_2_index"></span>
+                    <span class="rond" id="main_div_rond_3_index"></span>
+                </div>
+
             </div>
         </div>
-        <div class="div_liens_personels_index">
-            <div class="div_download_button_index">
-                <a href="image/Cv_anglais .pdf" target="_blank" download="Cv_aMondtéguy_Naïa.pdf">Download my CV</a>
+        <!-- Boutons en bas -->
+        <div class="d-flex justify-content-center pb-5">
+            <div class="div_download_button_index me-3 mb-3 ">
+                <a href="image/Cv_anglais .pdf" target="_blank" download="Cv_Mondeteguy_Naia.pdf">Télécharger mon CV</a>
             </div>
             <a class="bouton_linkedin" target="_blank" href="https://www.linkedin.com/in/naïa-mondétéguy-34395632b">
-                <!-- Logo LinkedIn -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
                     <path
                         d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.78v2.16h.07c.66-1.25 2.28-2.57 4.7-2.57 5.02 0 5.95 3.3 5.95 7.58V24h-5v-7.92c0-1.89-.03-4.32-2.63-4.32-2.64 0-3.04 2.06-3.04 4.18V24h-5V8z" />
                 </svg>
             </a>
         </div>
-        <div class="div_about_me_index">
-            <h3>Hello,</h3>
-            <p class="p_about_me_text_index">
-                I am
-                <b>Naïa Mondétéguy</b>
-                , currently in my second year of Computer science to get my diploma of higher education. Passionate
-                about IT, I enjoy both the technical aspects and the thinking behind each project. I am particularly
-                interested in software / web development and I enjoy applying what I learn in class to practical
-                projects. Beyond academics, I like to explore new technologies and work on collaborative challenges that
-                push me to think creatively and critically.
-            </p>
-        </div>
-        <div class="div_conteneur_texte_cat_prog_index">
-            <h3>Skills</h3>
-            <ul class="ul_style_list_index">
-                <li>
-                    <h5 class="h5_titre_skill_index">Conception & Programmation</h5>
-                    <p class="p_para_skill_index">
-                        Integration of technical solutions into an educational framework, with a focus on designing
-                        efficient algorithms,
-                        implementing clean code, and adapting programming languages to meet project requirements.
-                        Emphasis on problem-solving, creativity, and the ability to transform ideas into functional
-                        applications.
-                    </p>
-                </li>
-                <li>
-                    <h5 class="h5_titre_skill_index">Data Management</h5>
-                    <p class="p_para_skill_index">
-                        Modeling, design, manipulation, and structuring of relational databases.
-                        Proficient in SQL queries, optimization techniques, and ensuring data integrity.
-                        Capable of transforming raw data into structured information that supports decision-making
-                        and
-                        analysis.
-                    </p>
-                </li>
-                <li>
-                    <h5 class="h5_titre_skill_index">Project Management</h5>
-                    <p class="p_para_skill_index">
-                        Planning and organization of projects within a collaborative framework, using agile and
-                        structured methodologies.
-                        Skilled in task prioritization, teamwork, and meeting deadlines while maintaining quality.
-                        Experience in coordinating responsibilities and ensuring smooth communication between team
-                        members.
-                    </p>
-                </li>
-                <li>
-                    <h5 class="h5_titre_skill_index">Network Installation</h5>
-                    <p class="p_para_skill_index">
-                        Configuration and deployment of secure networks to enable connectivity between systems and
-                        external networks.
-                        Knowledge of network protocols, troubleshooting, and ensuring data security.
-                        Practical experience in setting up and maintaining efficient and reliable connections.
-                    </p>
-                </li>
-                <li>
-                    <h5 class="h5_titre_skill_index">Data Exploitation and Processing</h5>
-                    <p class="p_para_skill_index">
-                        Extraction, transformation, and analysis of datasets to identify trends and patterns.
-                        Skilled in processing data to generate actionable insights, with the creation of
-                        visualizations,
-                        graphs, and dashboards
-                        that effectively communicate results to both technical and non-technical audiences.
-                    </p>
-                </li>
-            </ul>
+    </section>
 
-            <h3>Programing Languages</h3>
-            <ul class="ul_style_list_index">
-                <h5 class="h5_titre_skill_index">Web languages</h5>
-                <p>HTML, CSS, JS, PHP</p>
 
-                <h5 class="h5_titre_skill_index">Developing languages</h5>
-                <p>C++, JAVA, Python</p>
 
-                <h5 class="h5_titre_skill_index">Other languages</h5>
-                <p>SQL, PLSQL, Assembler</p>
-        </div>
-        <div class="div_about_me_index">
-            <h3>Hobbies</h3>
-            <h5 class="h5_titre_skill_index">Painting & Drawing</h5>
-            <div class="div_img_index">
-                <p>In my free time, I enjoy painting and customizing miniature figurines. It’s a relaxing creative
-                    outlet
-                    that lets me experiment with colors, textures, and detail work while also improving my focus and
-                    patience.</p>
-                <img src="image/Cthullu_de_Jojo-removebg-preview.png"
-                    alt="Une de mes peintures du jeu les deumeurs de l'épouvente">
-            </div>
-            <h5 class="h5_titre_skill_index">Cinema</h5>
-            <p>Cinema has always been one of my favorite hobbies. I enjoy discovering films from different cultures,
-                genres, and directors, as each one offers a new perspective and inspires me in different ways.
-                Whether
-                it’s through storytelling, cinematography, or sound design, I love how movies can spark ideas and
-                emotions.</p>
-
-            <h5 class="h5_titre_skill_index">Video games & Board games</h5>
-            <p>I enjoy both board games and video games, as they challenge me to think strategically, solve
-                problems,
-                and adapt to new situations. Many games also encourage teamwork and collaboration.</p>
-            </ul>
-        </div>
-        </div>
-
-    </main>
-    <footer>
+    <!-- Section À propos -->
+    <section class="container section-fullscreen segment text-center d-flex flex-column" style="max-height: 100vh;">
+        <h3>À propos de moi</h3>
         <p>
-            all rights reserved to Naïa Mondétéguy<br>
-            contact : naia.mondétéguy@gmail.com
+            Je m'appelle <b>Naïa Mondétéguy</b>, actuellement en deuxième année de BUT Informatique, je prépare
+            Passionnée par l'informatique, j'apprécie autant les aspects techniques que la réflexion
+            qui sous-tend chaque projet. Je suis particulièrement intéressée par le développement logiciel et
+            web. En dehors
+            des études, j'aime explorer de nouvelles technologies et participer à des projets collaboratifs.
         </p>
+        <!-- Loisirs -->
+        <h3>Loisirs</h3>
+
+        <h5>Peinture & Dessin</h5>
+        <div class="div_img_index">
+            <p>J’aime peindre et personnaliser des figurines. C’est un loisir créatif relaxant qui stimule ma
+                concentration
+                et ma patience.</p>
+        </div>
+
+        <h5>Cinéma</h5>
+        <p>J’aime découvrir des films de tous genres et cultures. Le cinéma m’inspire par sa narration et sa
+            mise en
+            scène.</p>
+
+        <h5>Jeux vidéo & Jeux de société</h5>
+        <p>Ils m’aident à développer ma stratégie, ma logique et mon esprit d’équipe.</p>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="container section-fullscreen segment text-center d-flex flex-column" style="max-height: 100vh;">
+        <h3 id="ancreCompetence">Compétences</h3>
+        <ul class="ul_style_list_index">
+            <li>
+                <h5>Conception & Programmation</h5>
+                <p>Intégration de solutions techniques, conception d'algorithmes efficaces et écriture d’un code
+                    clair et
+                    structuré.</p>
+            </li>
+            <li>
+                <h5>Gestion de Données</h5>
+                <p>Modélisation, manipulation et optimisation de bases de données relationnelles.</p>
+            </li>
+            <li>
+                <h5>Gestion de Projet</h5>
+                <p>Planification et coordination d’équipes, maîtrise des méthodes agiles et du travail
+                    collaboratif.</p>
+            </li>
+            <li>
+                <h5>Réseaux</h5>
+                <p>Configuration et maintenance de réseaux sécurisés et fiables.</p>
+            </li>
+            <li>
+                <h5>Exploitation et Analyse de Données</h5>
+                <p>Extraction, transformation et visualisation de données pour produire des analyses
+                    pertinentes.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Langages -->
+    <section class="segment">
+        <div class=" section-fullscreen container text-center d-flex flex-column">
+        <h3>Langages de Programmation</h3>
+        <ul class="ul_style_list_index">
+            <li>
+                <h5>Web</h5>
+                <p>HTML, CSS, JavaScript, PHP</p>
+            </li>
+            <li>
+                <h5>Développement</h5>
+                <p>C++, Java, Python</p>
+            </li>
+            <li>
+                <h5>Autres</h5>
+                <p>SQL, PL/SQL, Assembleur</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer id="ancreContact" class="bg-gris text-center py-3 mt-5">
+        <p>Tous droits réservés – Naïa Mondétéguy<br>Contact : naia.mondeteguy@gmail.com</p>
     </footer>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Empêche le scroll automatique sur l’ancre -->
+    <script>
+        if (window.location.hash) {
+            window.scrollTo(0, 0);
+            history.replaceState(null, null, window.location.pathname);
+        }
+    </script>
 </body>
 
 </html>

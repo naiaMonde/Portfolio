@@ -1,203 +1,114 @@
 /*----------------------------------------------------------------------------*/
-/*                           Css des elts commun                                  */
+/*                           Variables et styles de base                      */
 /*----------------------------------------------------------------------------*/
 
-
 :root {
-  --primary: #FF6B35;
-  /* Orange principal */
-  --primary-light: #FFA552;
-  /* Orange clair */
-  --dark: #2D2D2D;
-  /* Texte sombre */
-  --light: #F4F4F4;
-  /* Fond clair */
-  --white: #FFFFFF;
-  /* Fond principal */
-  --accent: #1D3557;
-  /* Bleu pétrole */
+  --primary: #b94e27;        /* Orange principal */
+  --primary-light: #e7602e;  /* Orange clair */
+  --dark: #2D2D2D;           /* Texte sombre */
+  --light: #ececec;          /* Fond principal */
+  --gris: #cfcfcf;           /* Gris clair */
+}
+
+html,body {
+  scroll-snap-type: y mandatory; /* active le snap vertical */
+}
+
+.segment {
+  scroll-snap-align: start;
+}
+
+footer {
+  min-height: auto; /* ne pas forcer à 100vh */
 }
 
 body {
-  background-color: var(--accent);
-  color: var(--white);
+  background-color: var(--light);
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
   overflow-x: hidden;
-  /* Supprime les marges par défaut */
+  margin: 0;
 }
 
-.rond {
-  border-radius: 50%;
-}
-
-#header_rond_index {
-  background-color: var(--primary);
-  padding: 20%;
-  justify-self: center;
-  margin-left: 40%;
-}
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   color: var(--primary-light);
   margin-top: 50px;
 }
 
 h3 {
-  font-size: 300%;
+  font-size: 2.5rem;
 }
 
 h5 {
   font-family: 'Montserrat', sans-serif;
   color: var(--primary);
-  font-size: 130%;
+  font-size: 1.3rem;
 }
 
-p{
+p {
   font-family: 'Roboto Slab', serif;
-  font-size: 120%;
+  font-size: 1.1rem;
+  text-align: justify;;
 }
 
-ul,
-li {
+ul, li {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
-header {
-  display: grid;
-  grid-template-columns: 2% 80% 8% 8%;
-  width: 100%;
-  height: 40px;
-  align-items: center;
-  padding-bottom: 20px;
-  background-color: var(--dark);
-}
-
-.header_Titre {
-  display: inline-block;
-  /* le lien s’adapte seulement au texte */
-  justify-self: start;
-  /* évite de remplir toute la colonne */
-  text-decoration: none;
-  /* Enlève le soulignement par défaut */
-  color: var(--white);
-}
-
-header a[href="index.html"],
-header a[href="travaux.html"] {
-  justify-self: end;
-  /* colle à droite */
-  text-align: right;
-  /* si le texte doit être aligné */
-}
-
-header div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#header_nom {
-  margin-left: 5px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.hamburger {
-  display: none;
-}
-
-/* Menu mobile caché */
-#mobileMenu {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 50px;
-  /* sous le header */
-  right: 0;
-  width: 200px;
-  background-color: var(--dark);
-  border-radius: 0 0 0 10px;
-}
-
-#mobileMenu a {
-  color: var(--white);
-  text-decoration: none;
-  margin: 10px 0;
-}
-
-/* Quand on ajoute la classe "show" en JS */
-#mobileMenu.show {
-  display: flex;
-}
-
-
-
 /*----------------------------------------------------------------------------*/
-/*                            Css de l'index                                   */
+/*                            Navbar                                           */
 /*----------------------------------------------------------------------------*/
 
 
+.nav-link {
+  color: var(--light) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
+.nav-link:hover {
+  color: var(--primary-light) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--primary-light);
+}
+
+/*----------------------------------------------------------------------------*/
+/*                                      Index                        */
+/*----------------------------------------------------------------------------*/
 
 #main_div_conteneur_titre_graphique_index {
-  margin: 5% 5%;
+  margin: 5%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
 #main_div_titre_index {
   margin-left: 10%;
   line-height: 1.2;
-  /* espace entre les lignes */
 }
 
 .text_main_div_titre_index {
   font-weight: normal;
-  /* enlève le gras seulement ici */
-  font-family: 'Montserrat Slab', serif;
-  margin: 0;
-  /* supprime toutes les marges */
-  padding: 0;
-  /* supprime tout padding */
-}
-
-span.text_main_div_titre_index {
-  font-size: 250%;
-}
-
-.div_conteneur_texte_cat_prog_index {
-  background-color: var(--dark);
-  padding: 10px;
-}
-
-.div_conteneur_texte_cat_prog_index > h3 {
-  text-align: center;
-}
-
-h3.text_main_div_titre_index {
-  font-size: 400%;
-  max-width: 100%;
-  /* ne dépasse pas la div */
   font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
 }
 
-#main_div_rond_1_index,
-#main_div_rond_2_index,
-#main_div_rond_3_index {
+
+.rond {
   display: inline-block;
+  border-radius: 50%;
   width: 100px;
-  /* taille fixe au lieu de padding % */
   height: 100px;
 }
 
 #main_div_rond_1_index {
   background-color: var(--primary);
   margin-top: 50px;
-  /* espace avec le header */
 }
 
 #main_div_rond_2_index {
@@ -207,32 +118,47 @@ h3.text_main_div_titre_index {
 }
 
 #main_div_rond_3_index {
-  background-color: var(--light);
+  background-color: var(--gris);
   margin-left: -30px;
   margin-top: 90px;
 }
 
+.section-fullscreen {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*                            Liens personnels / Boutons                      */
+/*----------------------------------------------------------------------------*/
+
 .div_liens_personels_index {
-  margin: 5% 5%;
+  margin: 5%;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .div_download_button_index {
-  background-color: var(--primary);
-  justify-self: start;
-  /* évite de remplir toute la colonne */
-  padding: 10px;
-  margin-left: 5%;
-  margin-top: 5%;
+  background-color: var(--primary-light);
+  padding: 10px 20px;
   border-radius: 10px;
+  margin: 10px;
 }
 
-.div_download_button_index>a {
+.div_download_button_index a {
   text-decoration: none;
-  /* Enlève le soulignement par défaut */
   color: var(--dark);
   font-weight: bold;
-  justify-content: center;
+}
+
+.div_download_button_index a:hover {
+  color: white;
 }
 
 .bouton_linkedin {
@@ -240,112 +166,80 @@ h3.text_main_div_titre_index {
   align-items: center;
   background-color: #0077B5;
   color: white;
-  padding: 8px 8px;
-  margin-top: 5%;
-  margin-left: 2%;
+  padding: 8px 12px;
+  margin: 10px;
   text-decoration: none;
   border-radius: 5px;
-  font-family: Arial, sans-serif;
   font-weight: bold;
 }
 
-.div_about_me_index {
-  width: 70%;
-  height: 100%;
-  margin: auto;
-  margin-top: 5%;
+.bouton_linkedin:hover {
+  background-color: #005983;
 }
 
-.div_about_me_index>h3 {
-  margin: 0;
-  /* supprime toutes les marges */
-  margin-top: 5%;
-  font-size: 300%;
+/*----------------------------------------------------------------------------*/
+/*                            Section À propos et compétences                 */
+/*----------------------------------------------------------------------------*/
 
+.div_conteneur_texte_cat_prog_index {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.p_about_me_text_index{
-  margin-bottom: 17%;
+.div_conteneur_texte_cat_prog_index > h3 {
+  text-align: center;
 }
+
+.h5_titre_skill_index {
+  color: var(--primary);
+  margin-left: -10px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*                            Section Loisirs                                 */
+/*----------------------------------------------------------------------------*/
 
 .div_img_index {
   display: flex;
-  align-items: center;}
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-.div_img_index > img {
+.div_img_index img {
   height: 250px;
   width: auto;
-}
-
-.div_img_index > p,
-.div_img_index > img {
-  display: inline-block;
-  vertical-align: middle; /* aligne verticalement le texte et l’image */
-}
-
-
-
-
-.h5_titre_skill_index {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--primary);
-  margin: 0;
-  margin-left: -20px;
-}
-
-
-.div_prog_language_index>p {
-  text-indent: 10px;
+  border-radius: 10px;
 }
 
 /*----------------------------------------------------------------------------*/
-/*                            Css de travaux                                  */
+/*                            Footer                                          */
 /*----------------------------------------------------------------------------*/
-
-#div_conteneur_titre_graphique_travaux {
-  margin: 5% 5%;
-  align-items: center;
-}
-
-.p_text_div_description_page_travaux {
-  font-size: 200%;
-  justify-self: center;
-}
-
-.div_projet_travaux {
-  margin: 5% 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Centre horizontalement tous les enfants */
-}
-
-.div_projet_travaux > h3 {
-  text-align: center;
-}
-
-
-.img_projet_contexte_travaux {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-}
-
-
-/*----------------------------------------------------------------------------*/
-/*                            Css ddu footer                                  */
-/*----------------------------------------------------------------------------*/
-
 
 footer {
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  background-color: var(--gris);
+  color: var(--dark);
+  font-size: 0.9rem;
 }
 
+/*----------------------------------------------------------------------------*/
+/*                            Responsive Design                               */
+/*----------------------------------------------------------------------------*/
 
-/* Tout écran de moins de 768px */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  #main_div_conteneur_titre_graphique_index {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #main_div_titre_index {
+    margin-left: 0;
+  }
 
   #main_div_rond_1_index,
   #main_div_rond_2_index,
@@ -353,51 +247,7 @@ footer {
     display: none;
   }
 
-  .header_Titre {
-    display: none;
+  .div_about_me_index {
+    width: 90%;
   }
-
-  #header_nom {
-    font-size: 200%;
-  }
-
-  #header_rond_index {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    /* afficher le bouton */
-    margin-left: 5px;
-
-    grid-column: 4;
-    /* place dans la 4e colonne */
-    justify-self: end;
-    /* colle à droite de sa cellule */
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-
-  }
-
-  header a.header_Titre {
-    display: none;
-    /* cache les liens dans la grille */
-  }
-
-  h3.text_main_div_titre_index{
-    font-size: 100%;
-  }
-
-  .div_grid_img_index{
-    display: block;
-  }
-
-}
-
-@media (max-width: 1100px) {
-  .div_grid_img_index > img{
-    display: none;
-  }
-
 }
