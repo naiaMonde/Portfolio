@@ -9,8 +9,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Ton style perso -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Polices -->
@@ -22,28 +20,32 @@
 
     <!-- Icône -->
     <link rel="icon" href="image/logo.png" />
+
+    <!-- Pour les animations -->
+    <!-- Gasp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <header class="segment fixed-top">
-        <nav class="navbar navbar-expand-lg bg-dark text-light">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-dark text-light navbar-dark">
             <div class="container-fluid" style="font-family: 'Montserrat', sans-serif;">
-                <a class="navbar-brand text-light" href="#">
+                <a class="navbar-brand text-light" href="#ancreDeb">
                     <img src="image/logo_inverted.png" alt="Logo" width="40" height="30"
                         class="d-inline-block align-text-top">
                     Mondétéguy Naïa
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#ancreCompetence">Compétences</a>
+                            <a class="nav-link" href="#ancreCompetence">Compétences</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projets</a>
@@ -58,10 +60,11 @@
     </header>
 
 
-    <section class="section-fullscreen segment bg-dark text-light d-flex flex-column justify-content-between"
+    <!-- Section d'accueil -->
+    <section id="ancreDeb"
+        class="section-fullscreen segment bg-dark text-light d-flex flex-column justify-content-between"
         style="max-height: 100vh; padding: 2rem 0;">
 
-        <!-- Contenu centré verticalement -->
         <div class="container flex-grow-1 d-flex align-items-center">
             <div class="row w-100">
 
@@ -82,7 +85,8 @@
         <!-- Boutons en bas -->
         <div class="d-flex justify-content-center pb-5">
             <div class="div_download_button_index me-3 mb-3 ">
-                <a href="image/Cv_anglais .pdf" target="_blank" download="Cv_Mondeteguy_Naia.pdf">Télécharger mon CV</a>
+                <a href="image/Cv_anglais .pdf" target="_blank" download="Cv_Mondeteguy_Naia.pdf">Télécharger
+                    mon CV</a>
             </div>
             <a class="bouton_linkedin" target="_blank" href="https://www.linkedin.com/in/naïa-mondétéguy-34395632b">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
@@ -91,37 +95,51 @@
                 </svg>
             </a>
         </div>
-    </section>
 
+    </section>
 
 
     <!-- Section À propos -->
     <section class="container section-fullscreen segment text-center d-flex flex-column" style="max-height: 100vh;">
         <h3>À propos de moi</h3>
         <p>
-            Je m'appelle <b>Naïa Mondétéguy</b>, actuellement en deuxième année de BUT Informatique, je prépare
+            Je m'appelle <b>Naïa Mondétéguy</b>, actuellement en deuxième année de BUT Informatique.
             Passionnée par l'informatique, j'apprécie autant les aspects techniques que la réflexion
             qui sous-tend chaque projet. Je suis particulièrement intéressée par le développement logiciel et
             web. En dehors
             des études, j'aime explorer de nouvelles technologies et participer à des projets collaboratifs.
         </p>
+
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <h6><b>Age</b></h6>
+                    <p class="justify-content-center d-flex">J’ai<span id="age"></span>.</p>
+                </div>
+                <div class="col">
+                    <h6><b>Localisation</b></h6>
+                    <p class="justify-content-center d-flex">Bayonne, France </p>
+                </div>
+                <div class="col">
+                    <h6><b>Langue</b></h6>
+                    <p class="justify-content-center d-flex">Anglais, courant, B2 <br>Espagnol, intermédaire, B1 </p>
+                </div>
+                <div class="col">
+                    <h6><b>Status</b></h6>
+                    <p class="justify-content-center d-flex">Étudiante en BUT informatique </p>
+                </div>
+            </div>
+        </div>
         <!-- Loisirs -->
         <h3>Loisirs</h3>
-
-        <h5>Peinture & Dessin</h5>
-        <div class="div_img_index">
-            <p>J’aime peindre et personnaliser des figurines. C’est un loisir créatif relaxant qui stimule ma
-                concentration
-                et ma patience.</p>
+        <div class="row">
+            <div class="col">
+                <h5>Peinture & Dessin</h5>
+            </div>
+            <div></div>
+            <h5>Cinéma</h5>
+            <h5>Jeux vidéo & Jeux de société</h5>
         </div>
-
-        <h5>Cinéma</h5>
-        <p>J’aime découvrir des films de tous genres et cultures. Le cinéma m’inspire par sa narration et sa
-            mise en
-            scène.</p>
-
-        <h5>Jeux vidéo & Jeux de société</h5>
-        <p>Ils m’aident à développer ma stratégie, ma logique et mon esprit d’équipe.</p>
     </section>
 
     <!-- Section Compétences -->
@@ -158,28 +176,49 @@
     <!-- Langages -->
     <section class="segment">
         <div class=" section-fullscreen container text-center d-flex flex-column">
-        <h3>Langages de Programmation</h3>
-        <ul class="ul_style_list_index">
-            <li>
-                <h5>Web</h5>
-                <p>HTML, CSS, JavaScript, PHP</p>
-            </li>
-            <li>
-                <h5>Développement</h5>
-                <p>C++, Java, Python</p>
-            </li>
-            <li>
-                <h5>Autres</h5>
-                <p>SQL, PL/SQL, Assembleur</p>
-            </li>
-        </ul>
-    </div>
+            <h3>Langages de Programmation</h3>
+            <ul class="ul_style_list_index">
+                <li>
+                    <h5>Web</h5>
+                    <p>HTML, CSS, JavaScript, PHP</p>
+                </li>
+                <li>
+                    <h5>Développement</h5>
+                    <p>C++, Java, Python</p>
+                </li>
+                <li>
+                    <h5>Autres</h5>
+                    <p>SQL, PL/SQL, Assembleur</p>
+                </li>
+            </ul>
+        
+        
+            <h3>Mes projets</h3>
+            <div class="bounceCardsContainer">
+                <div class="card" style="transform: rotate(10deg) translate(-170px);">
+                    <img class="image" src="https://picsum.photos/400/400?grayscale" alt="1">
+                </div>
+                <div class="card" style="transform: rotate(5deg) translate(-85px);">
+                    <img class="image" src="https://picsum.photos/500/500?grayscale" alt="2">
+                </div>
+                <div class="card" style="transform: rotate(-3deg);">
+                    <img class="image" src="https://picsum.photos/600/600?grayscale" alt="3">
+                </div>
+                <div class="card" style="transform: rotate(-10deg) translate(85px);">
+                    <img class="image" src="https://picsum.photos/700/700?grayscale" alt="4">
+                </div>
+                <div class="card" style="transform: rotate(2deg) translate(170px);">
+                    <img class="image" src="https://picsum.photos/300/300?grayscale" alt="5">
+                </div>
+            </div>
+</div>
+        </section>
 
-    <!-- Footer -->
-    <footer id="ancreContact" class="bg-gris text-center py-3 mt-5">
-        <p>Tous droits réservés – Naïa Mondétéguy<br>Contact : naia.mondeteguy@gmail.com</p>
-    </footer>
-    </section>
+        <!-- Footer -->
+        <footer id="ancreContact" class="bg-gris text-center py-3 mt-5 segment">
+            <p>Tous droits réservés – Naïa Mondétéguy<br>Contact : naia.mondeteguy@gmail.com</p>
+        </footer>
+    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -191,6 +230,8 @@
             history.replaceState(null, null, window.location.pathname);
         }
     </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
