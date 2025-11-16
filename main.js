@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ageElement = document.getElementById("age");
   if (ageElement) {
     const ageNaia = calculerAge("2006-06-01");
-    ageElement.textContent = " " + ageNaia + " ans";
+    ageElement.textContent = " " + ageNaia + " ans";
   }
 });
 

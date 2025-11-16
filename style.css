@@ -218,13 +218,17 @@ ul, li {
 /*                            Footer                                          */
 /*----------------------------------------------------------------------------*/
 
-footer {
-  margin-top: 40px;
-  text-align: center;
+footer { 
   padding: 15px;
   background-color: var(--gris);
   color: var(--dark);
   font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  footer{
+    margin-top: 50px;
+    padding-top: 90px;
+}
 }
 
 /*----------------------------------------------------------------------------*/
