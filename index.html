@@ -114,7 +114,7 @@
             <div class="row row-cols-2">
                 <div class="col">
                     <h6><b>Age</b></h6>
-                    <p class="justify-content-center d-flex">J’ai<span id="age"></span>.</p>
+                    <p class="justify-content-center d-flex"><span id="age"></span>.</p>
                 </div>
                 <div class="col">
                     <h6><b>Localisation</b></h6>
@@ -131,168 +131,176 @@
             </div>
         </div>
         <!-- Loisirs -->
-        <h3>Loisirs</h3>
-        <div class="row">
+        <h3>Ce qui me défini </h3>
+        <div class="row column-gap-3">
             <div class="col">
-                <h5>Peinture & Dessin</h5>
+                <div class="bounceCardsContainer">
+                    <div class="loisir-card card" style="transform: rotate(10deg) translate(-170px);">
+                        <img class="image" src="image/jeuxdesociété.jpg" alt="1">
+                    </div>
+                    <div class="loisir-card card" style="transform: rotate(5deg) translate(-85px);">
+                        <img class="image card" src="image/jeuxVidéos.jpg" alt="2">
+                    </div>
+                    <div class="loisir-card card card " style="transform: rotate(-3deg);">
+                        <img class="image" src="image/figurine.jpg" alt="3">
+                    </div>
+                    <div class="loisir-card card" style="transform: rotate(-10deg) translate(85px);">
+                        <img class="image" src="image/films.jpg" alt="4">
+                    </div>
+                    <div class="loisir-card card" style="transform: rotate(2deg) translate(170px);">
+                        <img class="image" src="image/dessin.jpg" alt="5">
+                    </div>
+                </div>
             </div>
-            <div></div>
-            <h5>Cinéma</h5>
-            <h5>Jeux vidéo & Jeux de société</h5>
-            <div class="bounceCardsContainer">
-                <div class="card" style="transform: rotate(10deg) translate(-170px);">
-                    <img class="image" src="https://picsum.photos/400/400?grayscale" alt="1">
+    </section>
+
+    <!-- Section Compétences -->
+
+    <section class="container section-fullscreen segment text-center d-flex flex-column " style="max-height: 100vh;">
+        <div class="row gx-5">
+            <div class="col text-center p-3">
+                <h3 id="ancreCompetence">Compétences</h3>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Conception & Programmation</h5>
+                        </div>
+                        <p class="mb-1">Intégration de solutions techniques, conception d'algorithmes efficaces et
+                            écriture d’un code clair et structuré.</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Gestion de Données</h5>
+                        </div>
+                        <p class="mb-1">Modélisation, manipulation et optimisation de bases de données relationnelles.</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Gestion de Projet</h5>
+                        </div>
+                        <p class="mb-1">Planification et coordination d’équipes, maîtrise des méthodes agiles et du travail
+                            collaboratif.</p>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Réseaux</h5>
+                        </div>
+                        <p class="mb-1">Configuration et maintenance de réseaux sécurisés et fiables.</p>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Exploitation et Analyse de Données</h5>
+                        </div>
+                        <p class="mb-1">Extraction, transformation et visualisation de données pour produire des analyses
+                            pertinentes.</p>
+                    </a>
                 </div>
-                <div class="card" style="transform: rotate(5deg) translate(-85px);">
-                    <img class="image" src="https://picsum.photos/500/500?grayscale" alt="2">
-                </div>
-                <div class="card" style="transform: rotate(-3deg);">
-                    <img class="image" src="https://picsum.photos/600/600?grayscale" alt="3">
-                </div>
-                <div class="card" style="transform: rotate(-10deg) translate(85px);">
-                    <img class="image" src="https://picsum.photos/700/700?grayscale" alt="4">
-                </div>
-                <div class="card" style="transform: rotate(2deg) translate(170px);">
-                    <img class="image" src="https://picsum.photos/300/300?grayscale" alt="5">
-                </div>
+
+                <ul class="ul_style_list_index">
+                    <li>
+                        <h5></h5>
+                        <p></p>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <p></p>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <p></p>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <p></p>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col text-center p-3">
+                <h3>Langages de Programmation</h3>
+                <ul class="ul_style_list_index">
+                    <li>
+                        <h5>Web</h5>
+                        <p>HTML, CSS, JavaScript, PHP</p>
+                    </li>
+                    <li>
+                        <h5>Développement</h5>
+                        <p>C++, Java, Python</p>
+                    </li>
+                    <li>
+                        <h5>Autres</h5>
+                        <p>SQL, PL/SQL, Assembleur</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section class="container section-fullscreen segment text-center d-flex flex-column" style="max-height: 100vh;">
-        <h3 id="ancreCompetence">Compétences</h3>
-        <ul class="ul_style_list_index">
-            <li>
-                <h5>Conception & Programmation</h5>
-                <p>Intégration de solutions techniques, conception d'algorithmes efficaces et écriture d’un code
-                    clair et
-                    structuré.</p>
-            </li>
-            <li>
-                <h5>Gestion de Données</h5>
-                <p>Modélisation, manipulation et optimisation de bases de données relationnelles.</p>
-            </li>
-            <li>
-                <h5>Gestion de Projet</h5>
-                <p>Planification et coordination d’équipes, maîtrise des méthodes agiles et du travail
-                    collaboratif.</p>
-            </li>
-            <li>
-                <h5>Réseaux</h5>
-                <p>Configuration et maintenance de réseaux sécurisés et fiables.</p>
-            </li>
-            <li>
-                <h5>Exploitation et Analyse de Données</h5>
-                <p>Extraction, transformation et visualisation de données pour produire des analyses
-                    pertinentes.</p>
-            </li>
-        </ul>
-    </section>
+    <section class="segment">
+        <div style="visibility:hidden;">bloop</div>
+        <div id="ancreProjet" class=" text-center d-block container pt-10 mt-5">
+            <h1 class="mb-5">Mes Projets</h1>
+            <div class="container d-grid gap-3" style="grid-template-columns: 1fr 1fr;">
 
+                <!-- --- CARTE PROJET --- -->
 
-    <section id="ancreProjet" class="segment section-fullscreen">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col text-center">
-                    <div class="p-3">
-                        <!-- Langages -->
-                        <h3>Langages de Programmation</h3>
-                        <ul class="ul_style_list_index">
-                            <li>
-                                <h5>Web</h5>
-                                <p>HTML, CSS, JavaScript, PHP</p>
-                            </li>
-                            <li>
-                                <h5>Développement</h5>
-                                <p>C++, Java, Python</p>
-                            </li>
-                            <li>
-                                <h5>Autres</h5>
-                                <p>SQL, PL/SQL, Assembleur</p>
-                            </li>
-                        </ul>
+                <div class="card d-block">
+                    <img class="card-img-top" src="image/katas2024.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">les Katas</h5>
+                        <p class="card-text">Exercice algritmique en équipe où le but est de codé le plus rapidement des
+                            problèmes algorithmiques en C++ afin de gagner un maximum de points.</p>
+                        <p class="card-text"><small class="text-muted">2024</small></p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="p-3">
-                        <h3>Mes projets</h3>
-                        <div id="carouselExample" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <!-- une carte  -->
-                                    <div class="container border border-dark border-2 rounded-5"
-                                        style="max-width: 400px;">
-                                        <img src="image/Piti_serpent-removebg-preview.png"
-                                            class="bd-placeholder-img card-img-top" alt="...">
-                                        <div class=" container p-3">
-                                            <h5>Lecteur CD</h5>
-                                            <p>Some quick example text to build on the card title and make up the
-                                                bulk of the
-                                                card’s
-                                                content.</p>
-                                            <a href="#" class="btn btn-dark ">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <!-- fin de la carte -->
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="container border border-dark border-2 rounded-5"
-                                        style="max-width: 400px;">
-                                        <img src="image/Piti_serpent-removebg-preview.png"
-                                            class="bd-placeholder-img card-img-top" alt="...">
-                                        <div class=" container p-3">
-                                            <h5>Passatemps</h5>
-                                            <p>Some quick example text to build on the card title and make up the
-                                                bulk of the
-                                                card’s
-                                                content.</p>
-                                            <a href="#" class="btn btn-dark ">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="container border border-dark border-2 rounded-5"
-                                        style="max-width: 400px;">
-                                        <img src="image/Piti_serpent-removebg-preview.png"
-                                            class="bd-placeholder-img card-img-top" alt="...">
-                                        <div class=" container p-3">
-                                            <h5>Base de données</h5>
-                                            <p>Some quick example text to build on the card title and make up the
-                                                bulk of the
-                                                card’s
-                                                content.</p>
-                                            <a href="#" class="btn btn-dark ">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="container border border-dark border-2 rounded-5"
-                                        style="max-width: 400px;">
-                                        <img src="image/Piti_serpent-removebg-preview.png"
-                                            class="bd-placeholder-img card-img-top" alt="...">
-                                        <div class=" container p-3">
-                                            <h5>Réseaux</h5>
-                                            <p>Some quick example text to build on the card title and make up the
-                                                bulk of the
-                                                card’s
-                                                content.</p>
-                                            <a href="#" class="btn btn-dark ">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
+                <div class="card">
+                    <img class="card-img-top" src="image/lecteurd.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Lecteur CDs</h5>
+                        <p class="card-text">Avec </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Réseaux sur Marionnet</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="image/Passatemps_s3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Passatemps</h5>
+                        <p class="card-text">Site de vente d'occasion de jeu de société.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="image/roulette2025.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Une roulette pour des films</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="image/Figudream.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Site de vente</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
             </div>
@@ -301,9 +309,9 @@
 
 
     <!-- Footer -->
-    <footer id="ancreContact" class="bg-gris text-center py-3 mt-5 segment">
+    <footer id="ancreContact" class="bg-gris text-center py-3 mt-5 segment d-block">
         <p>Tous droits réservés – Naïa Mondétéguy<br>Contact : naia.mondeteguy@gmail.com</p>
-    </footer>
+    </footer> 
 
 
     <!-- Bootstrap JS -->

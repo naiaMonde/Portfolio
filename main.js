@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // -----------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
   gsap.fromTo(
-    ".card",
+    ".loisir-card",
     { scale: 0 },
     {
       scale: 1,
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".loisir-card");
   const transformStyles = [
     "rotate(10deg) translate(-170px)",
     "rotate(5deg) translate(-85px)",
