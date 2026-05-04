@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compétences - Naïa Mondétéguy</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+  <header class="site-header container-fluid">
+    <div class="container d-flex align-items-center justify-content-between">
+      <nav class="d-flex align-items-center gap-3">
+        <a href="index.html" class="text-muted text-decoration-none">Home</a>
+        <a href="projets.html" class="text-muted text-decoration-none">Projets</a>
+        <a href="competences.html" class="nav-pill bg-dark text-white text-decoration-none">Compétences</a>
+        <a href="#" class="text-muted text-decoration-none" data-bs-toggle="modal" data-bs-target="#ModalContact">Contact</a>
+      </nav>
+
+      <div>
+        <a class="btn btn-outline-secondary rounded-pill" href="image/CV_Mondétéguy_Naïa_alternance.pdf" target="_blank"
+          download="Cv_Mondeteguy_Naia.pdf">
+          Télécharger mon CV</a>
+      </div>
+  </header>
+
+  <main class="container my-4">
+    <div class="curved-card">
+      <h1 class="img-title mb-5">Mes Compétences</h1>
+
+      <div class="row g-4">
+        <!-- Section 1 : Programmation -->
+        <div class="col-md-6">
+          <h4 class="mb-3">Conception & Programmation</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <div class="small-block">HTML/CSS/JS</div>
+            <div class="small-block">PHP / Laravel</div>
+            <div class="small-block">Python / Django</div>
+            <div class="small-block">Java / Angular</div>
+            <div class="small-block">C / C++</div>
+            <div class="small-block">Assembleur</div>
+          </div>
+          <p class="mt-3 text-muted">Mise en œuvre d'un code propre et conception d'algorithmes performants.</p>
+        </div>
+
+        <!-- Section 2 : Données -->
+        <div class="col-md-6">
+          <h4 class="mb-3">Gestion de Données</h4>
+          <div class="d-flex flex-wrap gap-2">
+            <div class="small-block">SQL</div>
+            <div class="small-block">PL/SQL</div>
+            <div class="small-block">Modélisation</div>
+            <div class="small-block">Structuration</div>
+          </div>
+          <p class="mt-3 text-muted">Manipulation et structuration de bases de données relationnelles.</p>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Section 3 : Gestion de Projet & Soft Skills -->
+        <div class="col-12">
+          <h4 class="mb-4">Gestion de Projet & Aptitudes</h4>
+          <div class="row g-3">
+            <!-- Autonomie -->
+            <div class="col-md-4">
+              <div class="p-3 border rounded-3 h-100 shadow-sm">
+                <div class="fw-bold mb-1"> Autonomie & Initiative</div>
+                <p class="small text-muted mb-0">Capacité à monter en compétence sur de nouveaux frameworks et à proposer des solutions techniques.</p>
+              </div>
+            </div>
+            <!-- Adaptabilité -->
+            <div class="col-md-4">
+              <div class="p-3 border rounded-3 h-100 shadow-sm">
+                <div class="fw-bold mb-1"> Adaptabilité</div>
+                <p class="small text-muted mb-0">Passage fluide entre différents environnements (Front-end, Back-end, Logiciel) et langages de programmation.</p>
+              </div>
+            </div>
+            <!-- Rigueur -->
+            <div class="col-md-4">
+              <div class="p-3 border rounded-3 h-100 shadow-sm">
+                <div class="fw-bold mb-1"> Rigueur & Qualité</div>
+                <p class="small text-muted mb-0">Sens du détail dans l'optimisation du code et le respect des conventions de nommage.</p>
+              </div>
+            </div>
+            <!-- Communication -->
+            <div class="col-md-4">
+              <div class="p-3 border rounded-3 h-100 shadow-sm">
+                <div class="fw-bold mb-1"> Communication technique</div>
+                <p class="small text-muted mb-0">Savoir expliquer des problématiques complexes lors des revues de code ou des réunions d'équipe.</p>
+              </div>
+            </div>
+            <!-- Résolution de problèmes -->
+            <div class="col-md-4">
+              <div class="p-3 border rounded-3 h-100 shadow-sm">
+                <div class="fw-bold mb-1"> Résolution de problèmes</div>
+                <p class="small text-muted mb-0">Approche analytique pour identifier et corriger des bugs ou des goulots d'étranglement de performance.</p>
+              </div>
+            </div>
+            <!-- Méthodologie -->
+            <div class="col-md-4">
+              <div class="p-3 border rounded-3 h-100 shadow-sm">
+                <div class="fw-bold mb-1"> Organisation Agile</div>
+                <p class="small text-muted mb-0">Expérience du travail collaboratif en cycles courts et gestion des priorités.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!-- Modal Contact -->
+                <div class="modal fade" id="ModalContact" tabindex="-1" aria-labelledby="ModalContactLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-0 shadow">
+                      <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="ModalContactLabel">Me contacter</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                          <div><strong>Localisation :</strong><br>Bassens (33530), Gironde</div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                          <div><strong>Téléphone :</strong><br>06 03 53 55 96</div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                          <div><strong>Email :</strong><br><a href="mailto:naia.mondeteguy@gmail.com" class="text-decoration-none">naia.mondeteguy@gmail.com</a></div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-center gap-3 socials">
+                          <a href="https://www.linkedin.com/in/naïa-mondétéguy" target="_blank">LinkedIn</a>
+                          <a href="https://github.com/naiaMonde" target="_blank">GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

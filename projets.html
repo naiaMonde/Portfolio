@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mes Projets - Naïa Mondétéguy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header container-fluid">
+    <div class="container d-flex align-items-center justify-content-between">
+      <nav class="d-flex align-items-center gap-3">
+        <a href="index.html" class="text-muted text-decoration-none">Home</a>
+        <a href="projets.html" class="nav-pill bg-dark text-white text-decoration-none">Projets</a>
+        <a href="competences.html" class="text-muted text-decoration-none">Compétences</a>
+        <a href="#" class="text-muted text-decoration-none" data-bs-toggle="modal" data-bs-target="#ModalContact">Contact</a>
+      </nav>
+
+      <div>
+        <a class="btn btn-outline-secondary rounded-pill" href="image/CV_Mondétéguy_Naïa_alternance.pdf" target="_blank"
+          download="Cv_Mondeteguy_Naia.pdf">
+          Télécharger mon CV</a>
+      </div>
+  </header>
+
+  <main class="container my-4">
+    <div class="curved-card">
+      <h1 class="img-title mb-5">Mes Projets</h1>
+
+      <div class="row g-4">
+        
+        <!-- Projet 1 : Optera -->
+        <div class="col-md-6">
+          <div class="p-4 border rounded-4 h-100 shadow-sm">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h4 class="mb-0">Optera</h4>
+              <span class="small-block">Stage</span>
+            </div>
+            <p class="text-muted">Développement d'outils pour la gestion énergétique. Travail sur la fluidité de l'interface et l'optimisation des requêtes de données.</p>
+            <div class="d-flex gap-2 mb-3">
+              <span class="badge bg-light text-dark border">Nuxt 3</span>
+              <span class="badge bg-light text-dark border">Django</span>
+            </div>
+            <button class="btn btn-outline-dark btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#modalOptera">Voir le projet</button>
+          </div>
+        </div>
+
+        <!-- Projet 2 : La Roulette -->
+        <div class="col-md-6">
+          <div class="p-4 border rounded-4 h-100 shadow-sm">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h4 class="mb-0">La Roulette</h4>
+              <span class="small-block">Personnel</span>
+            </div>
+            <p class="text-muted">Application web permettant de sélectionner aléatoirement un film selon les préférences de l'utilisateur.</p>
+            <div class="d-flex gap-2 mb-3">
+              <span class="badge bg-light text-dark border">Python</span>
+              <span class="badge bg-light text-dark border">PHP</span>
+            </div>
+            <button class="btn btn-outline-dark btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#modalRoulette">Voir le projet</button>
+          </div>
+        </div>
+
+        <!-- Projet 3 : Passatemps -->
+        <div class="col-md-6">
+        <div class="p-4 border rounded-4 h-100 shadow-sm">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+            <h4 class="mb-0">Passatemps</h4>
+            <span class="small-block">Universitaire</span>
+            </div>
+            <p class="text-muted">Application web de jeux de société d'occasion. Gestion complète des annonces, du catalogue et des profils utilisateurs.</p>
+            <div class="d-flex gap-2 mb-3">
+            <span class="badge bg-light text-dark border">PHP 8.4</span>
+            <span class="badge bg-light text-dark border">MySQL</span>
+            <span class="badge bg-light text-dark border">MVC</span>
+            </div>
+            <!-- Cible la modal passatemps -->
+            <button class="btn btn-outline-dark btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPassatemps">Voir le projet</button>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+<!-- Modal Détails Optera : Version "Boostée" -->
+  <div class="modal fade" id="modalOptera" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-dark text-white border-0">
+          <h5 class="modal-title">Stage Développeur Fullstack @chez Optera</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5">
+          <div class="row">
+            <div class="col-md-7">
+              <h6 class="fw-bold mb-3">Missions & Réalisations</h6>
+              <ul class="text-muted small">
+                <li class="mb-2"><strong>Front-end :</strong> Développement d'interfaces réactives avec Nuxt 3, focus sur la visualisation de données énergétiques.</li>
+                <li class="mb-2"><strong>Back-end :</strong> Maintenance et évolution d'API REST robustes sous Django (Python).</li>
+                <li class="mb-2"><strong>Optimisation :</strong> Refactorisation de composants Vue.js et optimisation de requêtes SQL pour réduire les temps de chargement.</li>
+                <li><strong>Méthodologie :</strong> Collaboration en équipe agile, revues de code sur GitLab et participation aux Daily Scrums.</li>
+              </ul>
+            </div>
+            <div class="col-md-5 border-start">
+              <h6 class="fw-bold mb-3 text-center">Environnement</h6>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <div class="small-block">Vue.js / Nuxt 3</div>
+                <div class="small-block">Django (Python)</div>
+                <div class="small-block">PostgreSQL</div>
+                <div class="small-block">Docker</div>
+                <div class="small-block">Git / GitLab</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Détails Passatemps -->
+<div class="modal fade" id="modalPassatemps" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header bg-dark text-white border-0">
+        <h5 class="modal-title">Passatemps - Plateforme de jeux de société</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4 p-md-5">
+        <div class="row">
+          <div class="col-md-7">
+            <h6 class="fw-bold mb-3">Missions & Réalisations</h6>
+            <ul class="text-muted small">
+              <li class="mb-2"><strong>Architecture :</strong> Développement en PHP pur suivant le pattern <strong>MVC</strong> pour une séparation claire de la logique et de l'affichage (Twig).</li>
+              <li class="mb-2"><strong>Base de données :</strong> Conception d'un schéma relationnel MySQL complexe (Jeux, Extensions, Annonces, Utilisateurs...).</li>
+              <li class="mb-2"><strong>Frontend :</strong> Création d'une interface responsive et dynamique avec Bootstrap, incluant un système de filtres avancés et des carrousels interactifs.</li>
+              <li class="mb-2"><strong>Gestion de fichiers :</strong> Système d'upload sécurisé d'images sur serveur avec gestion des volumes de données.</li>
+              <li><strong>Environnement :</strong> Configuration et déploiement sur infrastructure WAMP et environnement virtualisé Docker (Lakartxela).</li>
+            </ul>
+          </div>
+          <div class="col-md-5 border-start">
+            <h6 class="fw-bold mb-3 text-center">Environnement</h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <div class="small-block">PHP 8.4 / Twig</div>
+              <div class="small-block">MySQL 8.0</div>
+              <div class="small-block">Bootstrap 5</div>
+              <div class="small-block">WAMP / Docker</div>
+              <div class="small-block">Architecture MVC</div>
+              <div class="small-block">Git</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Détails La Roulette -->
+<div class="modal fade" id="modalRoulette" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header bg-dark text-white border-0">
+        <h5 class="modal-title">La Roulette - Sélecteur de films intelligent</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4 p-md-5">
+        <div class="row">
+          <div class="col-md-7">
+            <h6 class="fw-bold mb-3">Missions & Réalisations</h6>
+            <ul class="text-muted small">
+              <li class="mb-2"><strong>Algorithme de recommandation :</strong> Développement d'une logique permettant de croiser les watchlists de plusieurs utilisateurs pour trouver un film commun.</li>
+              <li class="mb-2"><strong>Filtres avancés :</strong> Intégration de filtres de durée (courts-métrages vs films longs) avec récupération dynamique via l'API OMDb.</li>
+              <li class="mb-2"><strong>Gestion de données :</strong> Système d'importation et de traitement de fichiers CSV exportés depuis Letterboxd.</li>
+              <li class="mb-2"><strong>Expérience Utilisateur :</strong> Interface interactive avec marquage en temps réel des films comme "vus", mettant à jour automatiquement les fichiers serveurs.</li>
+              <li><strong>Authentification :</strong> Système de session sécurisé avec gestion de profils et de groupes d'amis.</li>
+            </ul>
+
+            <p>Voir le site à <a href="https://roulette.great-site.net" target="_blank" class="text-decoration-none">Lien roulette</a></p>
+          </div>
+          <div class="col-md-5 border-start">
+            <h6 class="fw-bold mb-3 text-center">Environnement</h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <div class="small-block">PHP 8.4 / MVC</div>
+              <div class="small-block">API OMDb</div>
+              <div class="small-block">Twig</div>
+              <div class="small-block">JavaScript (AJAX/Fetch)</div>
+              <div class="small-block">JSON / CSV Storage</div>
+              <div class="small-block">Bootstrap 5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal Contact -->
+                <div class="modal fade" id="ModalContact" tabindex="-1" aria-labelledby="ModalContactLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-0 shadow">
+                      <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="ModalContactLabel">Me contacter</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                          <div><strong>Localisation :</strong><br>Bassens (33530), Gironde</div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                          <div><strong>Téléphone :</strong><br>06 03 53 55 96</div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                          <div><strong>Email :</strong><br><a href="mailto:naia.mondeteguy@gmail.com" class="text-decoration-none">naia.mondeteguy@gmail.com</a></div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-center gap-3 socials">
+                          <a href="https://www.linkedin.com/in/naïa-mondétéguy" target="_blank">LinkedIn</a>
+                          <a href="https://github.com/naiaMonde" target="_blank">GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
